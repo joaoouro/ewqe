@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7ede2;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #ff6f3c;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 8px;  /* Ajuste no espaçamento */
+}
+
+div > div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);  /* Sombra mais proeminente */
+    width: 90%;  /* Ajuste para largura máxima */
+    max-width: 400px;  /* Limite da largura */
+    margin: auto;
+}
+
+form {
+    margin-top: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;  /* Aumento do padding para mais preenchimento */
+    margin-bottom: 16px;
+    border: 2px solid #ccc;  /* Borda mais grossa */
+    border-radius: 4px;  /* Ajuste no raio da borda */
+    align-self: center;
+    align-content: center;
+}
+
+button {
+    width: 100%;
+    background-color: #ff6f3c;
+    color: white;
+    border: none;
+    padding: 12px;  /* Aumento do padding para botão mais alto */
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;  /* Ajuste para fonte mais negrito */
+}
+
+button:hover {
+    background-color: #e6643c;
+}
+
+a {
+    color: #ff6f3c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    text-align: left;
+
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 600px) {
+    div > div {
+        width: 80%;  /* Aumento da largura para preencher mais espaço */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Sombra mais leve para menos intensidade */
+    }
+
+    h1 {
+        font-size: 22px;  /* Redução do tamanho da fonte */
+    }
+
+    h2 {
+        font-size: 18px;  /* Redução do tamanho da fonte */
+    }
+
+    input[type="email"], input[type="password"] {
+        padding: 10px;  /* Redução do padding */
+    }
+
+    button {
+        padding: 10px;  /* Redução do padding do botão */
+    }
+}
